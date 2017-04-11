@@ -1,0 +1,53 @@
+{
+  "name": "elementrem-solc",
+  "version": "0.4.10",
+  "description": "Elementrem Solidity compiler",
+  "main": "index.js",
+  "bin": {
+    "solcjs": "solcjs"
+  },
+  "scripts": {
+    "lint": "semistandard",
+    "prepublish": "./downloadCurrentVersion.js",
+    "test": "tape ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elementrem/solc-js.git"
+  },
+  "keywords": [
+    "elementrem",
+    "solidity",
+    "compiler"
+  ],
+  "files": [
+    "abi.js",
+    "index.js",
+    "solcjs",
+    "soljson.js",
+    "wrapper.js"
+  ],
+  "author": "elementrem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elementrem/solc-js/issues"
+  },
+  "homepage": "https://github.com/elementrem/solc-js#readme",
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "memorystream": "^0.3.1",
+    "require-from-string": "^1.1.0",
+    "semver": "^5.3.0",
+    "yargs": "^4.7.1"
+  },
+  "devDependencies": {
+    "semistandard": "^8.0.0",
+    "tape": "^4.5.1",
+    "tape-spawn": "^1.4.2"
+  },
+  "semistandard": {
+    "ignore": [
+      "soljson.js"
+    ]
+  }
+}
