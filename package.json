@@ -1,5 +1,5 @@
 {
-  "name": "elementrem-solc",
+  "name": "solc",
   "version": "0.4.10",
   "description": "Elementrem Solidity compiler",
   "main": "index.js",
